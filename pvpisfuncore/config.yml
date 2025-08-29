@@ -1,0 +1,23 @@
+ranks:
+  owner:
+    permissions:
+      - hubcore.fly
+      - hubcore.gamemode
+      - hubcore.rank.set
+      - hubcore.reload
+  admin:
+    permissions:
+      - hubcore.fly
+      - hubcore.gamemode
+  moderator:
+    permissions:
+      - hubcore.fly
+  vip:
+    permissions:
+      - hubcore.fly
+  jucator:
+    permissions: []
+
+users:
+  00000000-0000-0000-0000-000000000000:
+    rank: owner

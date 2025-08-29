@@ -1,0 +1,42 @@
+name: PvPisFUNCore
+version: 1.2
+main: me.pvpisfun.core.PvPisFUNCore
+api-version: 1.8
+description: HubCore plugin pentru serverul PvPisFUN
+author: NumeleTau
+
+commands:
+  rank:
+    description: Setează rankul unui jucător
+    usage: /rank <jucator> <rank>
+    permission: hubcore.rank.set
+    permission-message: Nu ai permisiunea să folosești această comandă.
+  gm:
+    description: Schimba GameMode-ul
+    usage: /gm <0|1|2|3>
+    permission: hubcore.gamemode
+    permission-message: Nu ai permisiunea să folosești această comandă.
+  fly:
+    description: Activeaza sau dezactiveaza zborul
+    usage: /fly
+    permission: hubcore.fly
+    permission-message: Nu ai permisiunea să folosești această comandă.
+  reloadcore:
+    description: Reîncarcă configurația pluginului
+    usage: /reloadcore
+    permission: hubcore.reload
+    permission-message: Nu ai permisiunea să folosești această comandă.
+
+permissions:
+  hubcore.rank.set:
+    description: Permisiune pentru comanda /rank
+    default: op
+  hubcore.gamemode:
+    description: Permisiune pentru comanda /gm
+    default: false
+  hubcore.fly:
+    description: Permisiune pentru comanda /fly
+    default: false
+  hubcore.reload:
+    description: Permisiune pentru comanda /reloadcore
+    default: op
